@@ -65,7 +65,7 @@
     .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 3rem 1.5rem;
+      padding: 3.5rem 1.5rem 2.5rem;
       position: relative;
       z-index: 1;
       flex: 1;
@@ -79,7 +79,7 @@
     .avatar-wrapper {
       position: relative;
       display: inline-block;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
     }
 
     .avatar {
@@ -133,7 +133,7 @@
       font-size: 1.15rem;
       color: var(--text-muted);
       max-width: 550px;
-      margin: 0 auto 1.5rem;
+      margin: 0 auto 1rem;
     }
 
     .location {
@@ -142,23 +142,23 @@
       gap: 6px;
       color: var(--text-muted);
       font-size: 0.95rem;
+      margin-bottom: 1.5rem;
     }
 
     .contact-links {
       display: flex;
       justify-content: center;
-      gap: 0.85rem;
+      gap: 1rem;
       flex-wrap: wrap;
-      margin-top: 1.5rem;
     }
 
     .btn {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 0.65rem 1.25rem;
+      padding: 0.7rem 1.4rem;
       border-radius: 10px;
-      font-size: 0.9rem;
+      font-size: 0.92rem;
       font-weight: 600;
       text-decoration: none;
       transition: all 0.2s ease;
@@ -273,14 +273,60 @@
       font-weight: 500;
     }
 
+    /* Footer styling with prominent email section */
     footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(0, 0, 0, 0.2);
+      padding: 3rem 1.5rem 2rem;
       text-align: center;
-      padding: 2rem;
-      color: #64748b;
-      font-size: 0.85rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
       position: relative;
       z-index: 1;
+    }
+
+    .footer-content {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .footer-heading {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      margin-bottom: 0.4rem;
+    }
+
+    .footer-subtext {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .email-display-card {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      padding: 0.75rem 1.5rem;
+      border-radius: 12px;
+      color: #cbd5e1;
+      font-size: 1rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      margin-bottom: 2rem;
+    }
+
+    .email-display-card:hover {
+      border-color: #818cf8;
+      background: rgba(99, 102, 241, 0.1);
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    .footer-copy {
+      color: #64748b;
+      font-size: 0.85rem;
     }
   </style>
 </head>
@@ -307,15 +353,11 @@
       <div class="contact-links">
         <a href="mailto:thesaikya2005@gmail.com" class="btn btn-primary">
           <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-          Email Me
+          Get in Touch
         </a>
         <a href="https://www.linkedin.com/in/jyotirmoy-saikia-744892436" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
           <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
           LinkedIn Profile
-        </a>
-        <a href="tel:8638939231" class="btn btn-secondary">
-          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-          Call
         </a>
       </div>
     </header>
@@ -344,7 +386,7 @@
             </div>
             <h3 class="card-title">Build WITH AI Bootcamp</h3>
             <p class="card-subtitle">Google for Developers</p>
-            <p class="card-desc">Hands-on experience and training with Google AI technologies, developing next-generation intelligent applications.</p>
+            <p class="card-desc">Hands-on training and application design with Google AI developer tools and machine learning workflows.</p>
           </div>
         </div>
       </section>
@@ -361,10 +403,18 @@
         </div>
       </section>
     </main>
-
-    <footer>
-      <p>&copy; 2026 Jyotirmoy Saikia. All rights reserved.</p>
-    </footer>
   </div>
+
+  <footer>
+    <div class="footer-content">
+      <h3 class="footer-heading">Let's Connect</h3>
+      <p class="footer-subtext">Have a question or want to work together? Feel free to reach out directly via email.</p>
+      <a href="mailto:thesaikya2005@gmail.com" class="email-display-card">
+        <svg width="20" height="20" fill="none" stroke="#818cf8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+        thesaikya2005@gmail.com
+      </a>
+      <p class="footer-copy">&copy; 2026 Jyotirmoy Saikia. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
